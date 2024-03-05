@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU Analysis</title>
+</head>
+<body>
+    <h1>CPU Analysis</h1>
+    <form action="/predict" method="post">
+        <label for="p_cores">Number of p-cores:</label>
+        <input type="number" name="p_cores" id="p_cores" required><br>
+
+        <label for="e_cores">Number of e-cores:</label>
+        <input type="number" name="e_cores" id="e_cores" required><br>
+
+        <label for="base_speed">Base speed (GHz):</label>
+        <input type="number" step="0.01" name="base_speed" id="base_speed" required><br>
+
+        <button type="submit">Analyze CPU</button>
+    </form>
+</body>
+</html>
